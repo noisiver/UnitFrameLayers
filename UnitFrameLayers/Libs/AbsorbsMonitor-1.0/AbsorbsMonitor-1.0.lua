@@ -524,7 +524,7 @@ function AM_Core.CreateAreaTrigger(sourceGUID, sourceName, triggerGUID, triggerN
 
 	local effectInfo = Effects[spellId];
 	
-	local value, quality, extra = effectInfo[3](sourceGUID, sourceName, destGUID, destName, spellId, nil);
+	local value, quality, extra = effectInfo[3](sourceGUID, sourceName, triggerGUID, triggerName, spellId, nil);
 			
 	if(value == nil) then return; end
 	
