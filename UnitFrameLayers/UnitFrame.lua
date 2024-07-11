@@ -3,18 +3,13 @@
 --######                   	UnitFrameLayers                      #######
 ------------------------------------------------------------------------
 --######################################################################
-------------------------------------------------------------------------
---######       My Discord: https://discord.gg/Fm9kgfk            #######
-------------------------------------------------------------------------
---######################################################################
 
 local LibAbsorb  = LibStub:GetLibrary("AbsorbsMonitor-1.0");
 local HealComm   = LibStub:GetLibrary("LibHealComm-4.0");
 
 PowerBarColor = PowerBarColor or {};
-PowerBarColor["RAGE"] = { r = 1.00, g = 0.00, b = 0.00, fullPowerAnim=true };
-PowerBarColor["FOCUS"] = { r = 1.00, g = 0.50, b = 0.25, fullPowerAnim=true };
-PowerBarColor["ENERGY"] = { r = 1.00, g = 1.00, b = 0.00, fullPowerAnim=true };
+PowerBarColor["RAGE"].fullPowerAnim = true;
+PowerBarColor["ENERGY"].fullPowerAnim = true;
 
 function GetPowerBarColor(powerType)
 	return PowerBarColor[powerType];
